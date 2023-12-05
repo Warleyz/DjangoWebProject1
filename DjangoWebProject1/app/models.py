@@ -3,8 +3,6 @@ Definition of models.
 """
 
 
-from multiprocessing.spawn import import_main_path
-from tabnanny import verbose
 from django.db import models
 from django.contrib import admin
 from datetime import datetime

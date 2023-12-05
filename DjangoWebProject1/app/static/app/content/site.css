@@ -6,8 +6,8 @@ body {
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: #000000;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -67,10 +67,6 @@ input[type="checkbox"].input-validation-error {
     font-size: 12px;
 }
 
-.navbar-right{
-    display:inline;
-}
-
 .block-about p {
     font-size: 22px;
     line-height: 160%;
@@ -81,31 +77,13 @@ input[type="checkbox"].input-validation-error {
     margin-bottom: 25px;
 }
 
-ul { padding-inline-start: 0;}
-
 .cons {
-    width: 100%;
-    text-align:center;
-}
-
-.column {
-    display: inline-block;
-    width: 33%;
-    padding:0
-}
-
-.column li {
-    list-style-type: none;
-    display: inline-block;
-    height: 320px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 35px;
-    padding: 25px;
-    background: #FCD32B;
     text-align: center;
-    border: solid black 1px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin-bottom: 35px;
+}
+.cons .cell {
+    padding: 15px;
+    height: 300px;
     font-size: 18px;
 }
 
@@ -120,13 +98,8 @@ ul { padding-inline-start: 0;}
     margin-bottom: 25px;
 }
 
-.adressinfo {
-    display: inline-flex;
-}
-
-.map {
-    border: solid black 1px;
-    margin-left: 200px;
+.map iframe {
+    width: 100%;
 }
 
 .jumbotron {
@@ -158,7 +131,8 @@ ul { padding-inline-start: 0;}
 }
 
 .pic #piclogo {
-    width: 520px;
+    width: 100%;
+    max-width: 720px;
     border: solid #FCD32B 2px;
     border-radius: 10px;
     margin-bottom: 25px;
@@ -171,14 +145,13 @@ ul { padding-inline-start: 0;}
     margin-bottom:25px;
 }
 
+
 .product {
     border: solid #FCD32B 2px;
     border-radius: 15px;
 }
 
-.p1 { width: 450px; }
-.p2 { width: 450px; }
-.p3 { width: 380px; }
+.p1, .p2, .p3 {width: 49%;}
 
 .block-links{
     font-size:24px;
@@ -214,60 +187,41 @@ body {
     margin-bottom: 25px;
 }
 
-
 form .confirm{
     font-size:12px;
 }
-
-
-form .cb {
-    font-size: 16px;
+form .inpgroup1, form .inpgroup2{
+    width:100%;
 }
 
 form .inpgroup1 .inp {
-    display: inline-block;
     margin: 30px;
     margin-top: 0;
-    padding: 25px;
-    border: solid black 1px;
-    border-radius: 25px;
-    background-color: rgb(252, 211, 43, 1);
-    width:450px;
+    min-width:330px;
+    width: 50%;
+
 }
 form .inpgroup2 .inp {
-    display: inline-block;
     margin: 30px;
     margin-top: 0;
-    padding: 25px;
-    border: solid black 1px;
-    border-radius: 25px;
-    width: 450px;
-    background-color: rgb(252, 211, 43, 1)
-}
-
-form .inpgroup3 .inp, .cb {
-    display: inline-block;
-    width: 455px;
-    vertical-align:middle;
+    min-width: 330px;
+    width: 50%;
 }
 
 form .inpgroup3 {
-    display: inline-block;
     margin: 30px;
     margin-top: 0;
-    padding: 25px;
-    border: solid black 1px;
-    border-radius: 25px;
-    background-color: rgb(252, 211, 43, 1)
 }
+
+form .inpgroup3 .inp, .cb {
+    font-size: 16px;
+}
+
 form .inpgroup4 {
     margin: 30px;
     margin-top: 0;
-    padding: 25px;
-    border: solid black 1px;
-    border-radius: 25px;
-    width: 965px;
-    background-color: rgb(252, 211, 43, 1);
+    min-width: 330px;
+    width: 50%;
 }
 
 form input[type="text"],
@@ -282,10 +236,8 @@ form textarea {
 
 form select {
     border-radius: 25px;
-    padding-left: 10px;
-    max-width: 85%;
+    max-width: 100%;
 }
-
 
 form .inpgroup5 div {
     margin-left: 30px;
@@ -321,8 +273,18 @@ h5 {
 .blockpp {
     text-align:center;
 }
+.postpic {
+    min-width: 320px;
+    width: 50%;
+}
 
 .blogpost h2{
     font-weight:bold;
     text-align:center;
 }
+
+.videos{
+    min-width:320px;
+    width:50%;
+}
+
