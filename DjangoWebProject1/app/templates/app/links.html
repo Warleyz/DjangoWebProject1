@@ -1,0 +1,41 @@
+{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+<h2 id="titleLinks">{{ title }}</h2>
+<div class="block-links">
+    <ol>
+        <li>
+            <div class="org">
+                <a href="https://drom.ru" target="_blank"> <img src="{% static 'app/content/logo1.png' %}" alt="Logo 1" width="75" /></a>
+                <a class="orgname" href="https://drom.ru">ДромРу</a><br/>
+                <span>
+                    На сайте вы найдете как обзоры авто и полезные статьи,
+                    блоги автолюбителей,  так и раздел с продажей подержанных автомобилей.
+                    Есть возможность обсуждения интересующих вопросов на специальном форуме.
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="org">
+                <a href="https://auto.ru" target="_blank"> <img src="{% static 'app/content/logo2.png' %}" alt="Logo 2" width="75" /></a>
+                <a class="orgname" href="https://auto.ru">АвтоРу</a><br />
+                <span>
+                    Автомобильный сайт в Рунете, через который ежегодно
+                    продаётся более полутора миллионов подержанных машин.
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="org">
+                <a href="https://drive2.ru/" target="_blank"> <img src="{% static 'app/content/logo3.png' %}" alt="Logo 3" width="75" /></a>
+                <a class="orgname" href="https://drive2.ru/">Drive2</a><br />
+                <span>
+                    Энциклопедия по ремонту и обслуживанию ваших авто, постоянно пополняемая сообществом.
+                </span>
+            </div>
+        </li>
+    </ol>
+</div>
+
+{% endblock %}
