@@ -2,7 +2,7 @@
 Definition of models.
 """
 
-from msilib.schema import Verb
+
 from multiprocessing.spawn import import_main_path
 from tabnanny import verbose
 from django.db import models
