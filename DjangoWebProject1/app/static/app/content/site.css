@@ -61,9 +61,12 @@ input[type="checkbox"].input-validation-error {
     font-size: 14px;
 }
 
+.navbar-brand{
+    padding-bottom:0;
+}
+
 .navbar-right,
-.navbar-right .navbar-brand
-{
+.navbar-right .navbar-brand {
     font-size: 12px;
 }
 
